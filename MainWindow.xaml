@@ -1,0 +1,30 @@
+﻿<Window x:Class="VICE_CALCULATOR_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VICE_CALCULATOR_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="518" Width="545">
+    <Grid Margin="0,0,0,-6" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Width="545">
+        <Button Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Margin="98,142,0,0" Click="Digit_one"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="188,142,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Click="Digit_two"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="277,142,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Click="Digit_three"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="98,215,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Click="Digit_four"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="188,215,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Click="Digit_five"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="277,215,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Click="Digit_six"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="98,289,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Click="Digit_seven"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="188,289,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Click="Digit_eight"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="277,289,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Click="Digit_nine"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="98,364,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}"  Click="Digit_cero"/>
+        <Button Content="C" HorizontalAlignment="Left" Margin="188,364,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Click="Digit_clear"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="366,142,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Click="Digit_divide"/>
+        <Button Content="X" HorizontalAlignment="Left" Margin="366,215,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Click="Digit_multiply"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="366,289,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Click="Digit_minus"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="366,364,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Click="Digit_plus"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="277,364,0,0" VerticalAlignment="Top" Height="56" Width="76" Background="{x:Null}" Click="Digit_equals"/>
+        <TextBlock Name="Workspace" HorizontalAlignment="Center" Margin="0,73,0,0" Text="9000" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="437" FontSize="48" IsEnabled="False" TextAlignment="Right"/>
+        <TextBlock Name="History" HorizontalAlignment="Center" Margin="0,49,0,0" Text="1000 x 9" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="437" TextAlignment="Right"/>
+
+    </Grid>
+</Window>
